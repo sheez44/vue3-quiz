@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "question": "What is the capital of France?",
+    "options": ["Paris", "Madrid", "Rome", "Berlin"],
+    "answer": "Paris"
+  },
+  {
+    "id": 2,
+    "question": "Which planet is known as the Red Planet?",
+    "options": ["Mars", "Venus", "Jupiter", "Mercury"],
+    "answer": "Mars"
+  },
+  {
+    "id": 3,
+    "question": "Who wrote 'Romeo and Juliet'?",
+    "options": ["William Shakespeare", "Charles Dickens", "Jane Austen", "Mark Twain"],
+    "answer": "William Shakespeare"
+  },
+  {
+    "id": 4,
+    "question": "What is the largest ocean on Earth?",
+    "options": ["Pacific Ocean", "Atlantic Ocean", "Indian Ocean", "Arctic Ocean"],
+    "answer": "Pacific Ocean"
+  },
+  {
+    "id": 5,
+    "question": "How many continents are there?",
+    "options": ["7", "5", "6", "8"],
+    "answer": "7"
+  },
+  {
+    "id": 6,
+    "question": "Which gas do plants absorb from the atmosphere?",
+    "options": ["Carbon dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
+    "answer": "Carbon dioxide"
+  },
+  {
+    "id": 7,
+    "question": "What is H2O commonly known as?",
+    "options": ["Water", "Hydrogen", "Salt", "Oxygen"],
+    "answer": "Water"
+  },
+  {
+    "id": 8,
+    "question": "Which country is famous for the pyramids?",
+    "options": ["Egypt", "Mexico", "Peru", "India"],
+    "answer": "Egypt"
+  },
+  {
+    "id": 9,
+    "question": "How many days are there in a leap year?",
+    "options": ["366", "365", "364", "367"],
+    "answer": "366"
+  },
+  {
+    "id": 10,
+    "question": "Which is the fastest land animal?",
+    "options": ["Cheetah", "Lion", "Horse", "Leopard"],
+    "answer": "Cheetah"
+  },
+  {
+    "id": 11,
+    "question": "What is the square root of 81?",
+    "options": ["9", "8", "7", "6"],
+    "answer": "9"
+  },
+  {
+    "id": 12,
+    "question": "Which language is primarily spoken in Brazil?",
+    "options": ["Portuguese", "Spanish", "English", "French"],
+    "answer": "Portuguese"
+  },
+  {
+    "id": 13,
+    "question": "What is the tallest mountain in the world?",
+    "options": ["Mount Everest", "K2", "Kilimanjaro", "Mont Blanc"],
+    "answer": "Mount Everest"
+  },
+  {
+    "id": 14,
+    "question": "Which animal is known as the King of the Jungle?",
+    "options": ["Lion", "Tiger", "Elephant", "Bear"],
+    "answer": "Lion"
+  },
+  {
+    "id": 15,
+    "question": "Which instrument has 88 keys?",
+    "options": ["Piano", "Violin", "Guitar", "Drums"],
+    "answer": "Piano"
+  },
+  {
+    "id": 16,
+    "question": "Which country invented pizza?",
+    "options": ["Italy", "France", "Greece", "Spain"],
+    "answer": "Italy"
+  },
+  {
+    "id": 17,
+    "question": "What is the freezing point of water in Celsius?",
+    "options": ["0", "32", "100", "-10"],
+    "answer": "0"
+  },
+  {
+    "id": 18,
+    "question": "Which bird cannot fly?",
+    "options": ["Penguin", "Eagle", "Parrot", "Sparrow"],
+    "answer": "Penguin"
+  },
+  {
+    "id": 19,
+    "question": "How many hours are in a day?",
+    "options": ["24", "12", "48", "36"],
+    "answer": "24"
+  },
+  {
+    "id": 20,
+    "question": "What color do you get when you mix red and blue?",
+    "options": ["Purple", "Green", "Orange", "Yellow"],
+    "answer": "Purple"
+  },
+  {
+    "id": 21,
+    "question": "Which planet is closest to the Sun?",
+    "options": ["Mercury", "Venus", "Earth", "Mars"],
+    "answer": "Mercury"
+  },
+  {
+    "id": 22,
+    "question": "Which is the largest mammal?",
+    "options": ["Blue Whale", "Elephant", "Giraffe", "Hippopotamus"],
+    "answer": "Blue Whale"
+  },
+  {
+    "id": 23,
+    "question": "How many sides does a hexagon have?",
+    "options": ["6", "5", "7", "8"],
+    "answer": "6"
+  },
+  {
+    "id": 24,
+    "question": "Which sport uses a shuttlecock?",
+    "options": ["Badminton", "Tennis", "Squash", "Table Tennis"],
+    "answer": "Badminton"
+  },
+  {
+    "id": 25,
+    "question": "What is the chemical symbol for gold?",
+    "options": ["Au", "Ag", "Fe", "Go"],
+    "answer": "Au"
+  },
+  {
+    "id": 26,
+    "question": "Which continent is the Sahara Desert located on?",
+    "options": ["Africa", "Asia", "Australia", "South America"],
+    "answer": "Africa"
+  },
+  {
+    "id": 27,
+    "question": "How many players are on a soccer team on the field?",
+    "options": ["11", "10", "9", "12"],
+    "answer": "11"
+  },
+  {
+    "id": 28,
+    "question": "What is the hardest natural substance?",
+    "options": ["Diamond", "Gold", "Iron", "Quartz"],
+    "answer": "Diamond"
+  },
+  {
+    "id": 29,
+    "question": "Which Disney character has a long nose that grows when he lies?",
+    "options": ["Pinocchio", "Mickey Mouse", "Goofy", "Dumbo"],
+    "answer": "Pinocchio"
+  },
+  {
+    "id": 30,
+    "question": "What is the currency of Japan?",
+    "options": ["Yen", "Won", "Yuan", "Dollar"],
+    "answer": "Yen"
+  },
+  {
+    "id": 31,
+    "question": "Which is the smallest planet in the Solar System?",
+    "options": ["Mercury", "Mars", "Venus", "Pluto"],
+    "answer": "Mercury"
+  },
+  {
+    "id": 32,
+    "question": "Which ocean lies between Africa and Australia?",
+    "options": ["Indian Ocean", "Pacific Ocean", "Atlantic Ocean", "Southern Ocean"],
+    "answer": "Indian Ocean"
+  },
+  {
+    "id": 33,
+    "question": "What is 15 × 4?",
+    "options": ["60", "45", "50", "55"],
+    "answer": "60"
+  },
+  {
+    "id": 34,
+    "question": "Which country is known as the Land of the Rising Sun?",
+    "options": ["Japan", "China", "South Korea", "Thailand"],
+    "answer": "Japan"
+  },
+  {
+    "id": 35,
+    "question": "How many strings does a standard guitar have?",
+    "options": ["6", "4", "5", "7"],
+    "answer": "6"
+  },
+  {
+    "id": 36,
+    "question": "Which animal is the largest cat species?",
+    "options": ["Tiger", "Lion", "Jaguar", "Leopard"],
+    "answer": "Tiger"
+  },
+  {
+    "id": 37,
+    "question": "Which planet has the most rings?",
+    "options": ["Saturn", "Jupiter", "Uranus", "Neptune"],
+    "answer": "Saturn"
+  },
+  {
+    "id": 38,
+    "question": "What is the boiling point of water in Celsius?",
+    "options": ["100", "90", "80", "120"],
+    "answer": "100"
+  },
+  {
+    "id": 39,
+    "question": "Which famous ship sank in 1912?",
+    "options": ["Titanic", "Britannic", "Queen Mary", "Mayflower"],
+    "answer": "Titanic"
+  },
+  {
+    "id": 40,
+    "question": "What is the largest country by area?",
+    "options": ["Russia", "Canada", "China", "United States"],
+    "answer": "Russia"
+  },
+  {
+    "id": 41,
+    "question": "Which blood type is known as the universal donor?",
+    "options": ["O Negative", "AB Positive", "A Positive", "B Negative"],
+    "answer": "O Negative"
+  },
+  {
+    "id": 42,
+    "question": "How many colors are there in a rainbow?",
+    "options": ["7", "6", "8", "5"],
+    "answer": "7"
+  },
+  {
+    "id": 43,
+    "question": "Which country gifted the Statue of Liberty to the USA?",
+    "options": ["France", "England", "Germany", "Canada"],
+    "answer": "France"
+  },
+  {
+    "id": 44,
+    "question": "Which vitamin is mainly produced by the body from sunlight?",
+    "options": ["Vitamin D", "Vitamin C", "Vitamin A", "Vitamin B12"],
+    "answer": "Vitamin D"
+  },
+  {
+    "id": 45,
+    "question": "Which company created the iPhone?",
+    "options": ["Apple", "Samsung", "Google", "Microsoft"],
+    "answer": "Apple"
+  },
+  {
+    "id": 46,
+    "question": "Which is the longest river in the world?",
+    "options": ["Nile", "Amazon", "Yangtze", "Mississippi"],
+    "answer": "Nile"
+  },
+  {
+    "id": 47,
+    "question": "How many planets are in the Solar System?",
+    "options": ["8", "9", "7", "10"],
+    "answer": "8"
+  },
+  {
+    "id": 48,
+    "question": "Which metal is liquid at room temperature?",
+    "options": ["Mercury", "Iron", "Copper", "Silver"],
+    "answer": "Mercury"
+  },
+  {
+    "id": 49,
+    "question": "Which country hosted the 2016 Summer Olympics?",
+    "options": ["Brazil", "China", "United Kingdom", "Japan"],
+    "answer": "Brazil"
+  },
+  {
+    "id": 50,
+    "question": "Which famous scientist developed the theory of relativity?",
+    "options": ["Albert Einstein", "Isaac Newton", "Nikola Tesla", "Galileo Galilei"],
+    "answer": "Albert Einstein"
+  }
+]

@@ -64,16 +64,25 @@ function checkResults() {
 
 }
 
-console.log(quizQuestions.value[round.value])
 </script>
 
 <template>
   <h1>Quiz</h1>
   <div v-if="showResults">
-    <h2>Results</h2>
-    <p>correctAnswers: {{ correctAnswers }}</p>
+    <h2>Results: you answered {{ correctAnswers }}/{{ quizQuestions.length }} correctly</h2>
+    
+    <div v-for="(question, quizIndex) in quizQuestions" :key="quizIndex">
+      <h3>{{ question.question }}</h3>
+
+      <ul>
+        <li v-for="(option, index) in question.options" :key="index" class="answer">
+          <span :class="{ 'user_answer': option === answerSheet[quizIndex], 'correct-answer': question.answer === option }">{{ option }}</span>
+        </li>
+      </ul>
+    </div>
+
   </div>
-  <div v-else>
+  <div class="quiz-container" v-else>
     <h2>Question {{ round + 1 }}</h2>
     <div>
     <h3>{{ quizQuestions[round].question }}</h3>
@@ -92,5 +101,32 @@ console.log(quizQuestions.value[round.value])
 
 
 <style lang="scss" scoped>
+ul {
+  padding: 0;
+  list-style-type: none;
+}
 
+.user_answer {
+  font-weight: 800;
+}
+
+.correct-answer {
+  background-color: green;
+}
+
+.quiz-container {
+  li {
+    cursor: pointer;
+
+    &:hover {
+      background-color: aquamarine;
+    }
+  }
+}
+
+.answer {
+  span {
+    display: block;
+  }
+}
 </style>

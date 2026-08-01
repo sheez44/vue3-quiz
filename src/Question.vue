@@ -2,7 +2,7 @@
     <div>
         <h3>{{ questionTitle }}</h3>
 
-        <QuestionOptions :options="currentQuestion.options" @select="handleOptionsSelect" />
+        <QuestionOptions :options="currentQuestion.options" :currentAnswer="currentAnswer" @select="handleOptionsSelect" />
     </div>
 </template>
 
@@ -15,6 +15,7 @@
 
     const currentQuestion = computed(() => quizStore.getCurrentQuestion)
     const questionTitle = computed(() => currentQuestion.value.question)
+    const currentAnswer = computed(() => quizStore.getCurrentAnswer)
 
     function handleOptionsSelect(option) {
         quizStore.addAnswer(option)

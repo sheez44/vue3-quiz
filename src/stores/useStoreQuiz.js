@@ -18,7 +18,7 @@ const useQuizStore = defineStore('quiz', {
         console.warn('no questions');
       }
     },
-    isAnswered() {
+    getCurrentAnswer() {
       return this.answers[this.currentRound]
     }
   },
@@ -57,9 +57,11 @@ const useQuizStore = defineStore('quiz', {
 
     nextRound() {
       console.log(this.answers)
-      if(this.currentRound < this.quizQuestions.length -1) {
+      if(this.currentRound < this.quizQuestions.length - 1) {
         this.currentRound++
-      }    
+      } else {
+        return true // Signal that quiz is complete
+      }   
     },
     
     previousRound() {

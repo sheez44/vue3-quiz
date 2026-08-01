@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import HomeView from '@/views/HomeView.vue'
 import QuizView from '@/views/QuizView.vue'
+import ResultsView from '@/views/ResultsView.vue';
 
 const refresh = false;
 
@@ -17,6 +18,11 @@ const router = createRouter({
       path: '/quiz',
       name: 'quiz',
       component: QuizView
+    },
+    { 
+      path: '/results',
+      name: 'results',
+      component: ResultsView
     }
   ],
 })

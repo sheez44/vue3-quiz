@@ -22,7 +22,7 @@ const quizStore = useQuizStore()
 
 const settings = {
   questions,
-  rounds: 6
+  rounds: 2
 }
 quizStore.startQuiz(settings)
 

@@ -15,7 +15,7 @@ import questions from '@/questions.json'
 
 import Question from '@/Question.vue';
 
-import useQuizStore from '@/stores/useStoreQuiz'
+import useQuizStore from '@/stores/useQuizStore'
 import QuizButtons from '@/QuizButtons.vue';
 
 const quizStore = useQuizStore()

@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
+import useQuizStore from '@/stores/useQuizStore'
+
 import HomeView from '@/views/HomeView.vue'
 import QuizView from '@/views/QuizView.vue'
 import ResultsView from '@/views/ResultsView.vue';
@@ -22,7 +24,16 @@ const router = createRouter({
     { 
       path: '/results',
       name: 'results',
-      component: ResultsView
+      component: ResultsView,
+      beforeEnter: () => {
+        const quizStore = useQuizStore()
+
+        if (quizStore.currentRound > 0 && quizStore.answers.length > 0) {
+          return true
+        }
+
+        return '/'
+      }
     }
   ],
 })

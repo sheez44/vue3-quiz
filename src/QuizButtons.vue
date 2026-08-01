@@ -6,7 +6,7 @@
 <script setup>
 import Button from '@/Button.vue'
 
-import useQuizStore from '@/stores/useStoreQuiz'
+import useQuizStore from '@/stores/useQuizStore'
 import { useRouter } from 'vue-router';
 
 import { computed } from 'vue';

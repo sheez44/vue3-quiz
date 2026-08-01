@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-    import useQuizStore from '@/stores/useStoreQuiz'
+    import useQuizStore from '@/stores/useQuizStore'
     import QuestionOptions from '@/QuestionOptions.vue';
     import { computed } from 'vue'
 

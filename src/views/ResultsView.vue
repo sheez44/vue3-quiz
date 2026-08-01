@@ -13,13 +13,12 @@
             </ul>
         </li>
     </ul>
+    <RouterLink to="/">Back home</RouterLink>
 </template>
 
 <script setup>
-
-
-import useQuizStore from '@/stores/useStoreQuiz'
-import { useRouter } from 'vue-router';
+import useQuizStore from '@/stores/useQuizStore'
+import { useRouter, RouterLink } from 'vue-router'
 
 import { computed } from 'vue';
 

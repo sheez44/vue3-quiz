@@ -1,5 +1,6 @@
 <template>
     <h1>Results</h1>
+    <h3>You answered <strong>{{ totalCorrentAnswers }}</strong> out of {{ quizQuestions.length }} correctly</h3>
     <ul class="list-none p-0 flex flex-col">
         <li v-for="(question, quizIndex) in quizQuestions" :key="quizIndex">
             <h3>{{ question.question }}</h3>
@@ -35,4 +36,5 @@ const getOptionClasses = (option, answer, questionIndex) => {
 
 const quizQuestions = quizStore.quizQuestions
 const userAnswers = quizStore.answers
+const totalCorrentAnswers = quizStore.countCorrectAnswers
 </script>

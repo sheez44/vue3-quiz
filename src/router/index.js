@@ -30,11 +30,7 @@ const router = createRouter({
       beforeEnter: () => {
         const quizStore = useQuizStore()
 
-        if (quizStore.currentRound > 0 && quizStore.answers.length > 0) {
-          return true
-        }
-
-        return '/'
+        return quizStore.questions.length > 0 ? true : '/'
       }
     },
     { 

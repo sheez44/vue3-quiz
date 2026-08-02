@@ -21,6 +21,11 @@ const useQuizStore = defineStore('quiz', {
     },
     getCurrentAnswer() {
       return this.answers[this.currentRound]
+    },
+    countCorrectAnswers() {
+      return this.answers.filter(
+        (answer, index) => this.quizQuestions[index].answer === answer
+      ).length
     }
   },
 
@@ -31,11 +36,11 @@ const useQuizStore = defineStore('quiz', {
 
     startQuiz(settings) {
       this.settings = { ...this.settings, ...settings }
+      console.log(settings)
       if(this.settings.questions.length > 0) {
         this.questions = this.settings.questions;
         this.setQuestions();      
       }
-  
     },
 
     setQuestions() {

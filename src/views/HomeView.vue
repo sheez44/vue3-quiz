@@ -3,7 +3,7 @@
 
   <form>
     <label for="rounds">How many questions?</label>
-    <input type="number" max="50" min="1" v-model="quizRounds"/>
+    <input type="number" max="50" min="1" v-model.number="quizRounds"/>
   </form>
 
   <RouterLink @click="startQuiz" to="/quiz" class="inline-block px-6 py-3 bg-green-600 text-white rounded-md no-underline">
@@ -23,7 +23,7 @@ const quizRounds = ref(2)
 
 const settings = {
   questions,
-  rounds: quizRounds
+  rounds: quizRounds > questions.length ? questions.length : quizRounds
 }
 
 function startQuiz() {

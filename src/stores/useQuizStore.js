@@ -6,6 +6,7 @@ const useQuizStore = defineStore('quiz', {
     quizQuestions: [],
     answers: [],
     currentRound: 0,
+    hasStarted: false,
     settings: {rounds: 8}
   }),
 
@@ -27,9 +28,9 @@ const useQuizStore = defineStore('quiz', {
     importQuestions(questions) {
       this.questions = question
     },
+
     startQuiz(settings) {
       this.settings = { ...this.settings, ...settings }
-      console.log(this.settings)
       if(this.settings.questions.length > 0) {
         this.questions = this.settings.questions;
         this.setQuestions();      
@@ -68,6 +69,13 @@ const useQuizStore = defineStore('quiz', {
       if(this.currentRound > 0) {
         this.currentRound--
       }
+    },
+
+    resetAll() {
+      this.questions = [],
+      this.quizQuestions = [],
+      this.answers = [],
+      this.currentRound = 0
     },
   }
 

@@ -14,12 +14,28 @@ const router = createRouter({
     { 
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomeView,
+      beforeEnter: () => {
+        const quizStore = useQuizStore()
+
+        quizStore.resetAll();
+
+        return
+      }
     },
     { 
       path: '/quiz',
       name: 'quiz',
-      component: QuizView
+      component: QuizView,
+      beforeEnter: () => {
+        const quizStore = useQuizStore()
+
+        if (quizStore.currentRound > 0 && quizStore.answers.length > 0) {
+          return true
+        }
+
+        return '/'
+      }
     },
     { 
       path: '/results',

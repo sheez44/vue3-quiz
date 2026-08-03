@@ -28,9 +28,7 @@ const router = createRouter({
       name: 'quiz',
       component: QuizView,
       beforeEnter: () => {
-        const quizStore = useQuizStore()
-
-        return quizStore.questions.length > 0 ? true : '/'
+        
       }
     },
     { 
@@ -38,13 +36,7 @@ const router = createRouter({
       name: 'results',
       component: ResultsView,
       beforeEnter: () => {
-        const quizStore = useQuizStore()
-
-        if (quizStore.currentRound > 0 && quizStore.answers.length > 0) {
-          return true
-        }
-
-        return '/'
+        
       }
     }
   ],

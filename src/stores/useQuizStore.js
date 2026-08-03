@@ -6,40 +6,51 @@ const useQuizStore = defineStore('quiz', {
     quizQuestions: [],
     answers: [],
     currentRound: 0,
-    hasStarted: false,
     settings: {rounds: 8}
   }),
 
+  persist: {
+    pick: [
+      'quizQuestions',
+      'answers',
+      'currentRound',
+      'settings'
+    ]
+  },
+
   getters: {
     getCurrentQuestion() {
-      if(this.quizQuestions.length > 0) {
+      
+    if(this.quizQuestions.length > 0) {
         return this.quizQuestions[this.currentRound];
       }
       else {
-        console.warn('no questions');
+        this.checkHistory()
+        return this.quizQuestions[this.currentRound];
       }
     },
     getCurrentAnswer() {
+      console.log(this.answers, this.currentRound)
       return this.answers[this.currentRound]
     },
     countCorrectAnswers() {
-      return this.answers.filter(
-        (answer, index) => this.quizQuestions[index].answer === answer
-      ).length
+      return this.answers.reduce((count, answer, index) => {
+        return count + (answer === this.quizQuestions[index]?.answer ? 1 : 0)
+      }, 0)
     }
   },
 
   actions: {
     importQuestions(questions) {
-      this.questions = question
+      this.questions = questions
     },
 
     startQuiz(settings) {
       this.settings = { ...this.settings, ...settings }
-      console.log(settings)
+
       if(this.settings.questions.length > 0) {
-        this.questions = this.settings.questions;
-        this.setQuestions();      
+        this.importQuestions(settings.questions)
+        this.setQuestions();     
       }
     },
 
@@ -54,16 +65,18 @@ const useQuizStore = defineStore('quiz', {
           }
       }
 
-      this.quizQuestions = selected 
+      this.quizQuestions = selected
     },
+      
 
     addAnswer(answer) {
       this.answers[this.currentRound] = answer
     },
 
     nextRound() {
-      console.log(this.answers)
-      if(this.currentRound < this.quizQuestions.length - 1) {
+      console.log(this.currentRound, this.settings.rounds)
+      if(this.currentRound < this.settings.rounds - 1) {
+      
         this.currentRound++
       } else {
         return true // Signal that quiz is complete
